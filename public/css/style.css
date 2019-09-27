@@ -1,0 +1,204 @@
+.item-1, 
+.item-2, 
+.item-3 {
+	position: absolute;
+  display: block;
+	top: 2em;
+  
+  width: 80%;
+  
+  font-size: 1.7em;
+
+	animation-duration: 20s;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+}
+
+.o-hidden{
+    overflow: hidden;
+}
+
+.item-1{
+	animation-name: anim-1;
+}
+
+.item-2{
+	animation-name: anim-2;
+}
+
+.item-3{
+	animation-name: anim-3;
+}
+
+@keyframes anim-1 {
+	0%, 8.3% { left: -100%; opacity: 0; }
+  8.3%,25% { left: 25%; opacity: 1; }
+  33.33%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-2 {
+	0%, 33.33% { left: -100%; opacity: 0; }
+  41.63%, 58.29% { left: 25%; opacity: 1; }
+  66.66%, 100% { left: 110%; opacity: 0; }
+}
+
+@keyframes anim-3 {
+	0%, 66.66% { left: -100%; opacity: 0; }
+  74.96%, 91.62% { left: 25%; opacity: 1; }
+  100% { left: 110%; opacity: 0; }
+}
+
+.phone_img{
+    height: 450px;
+}
+        .page-header-medium {
+            height: 100vh;
+            max-height: 500px;
+        }
+
+        .index-page .page-header .container>.content-center {
+            top: 50%;
+        }
+
+        .btn-nature {
+            background-color: rgb(67, 164, 34);
+            color: #FFFFFF !important;
+        }
+
+        .text-nature {
+            color: rgb(67, 164, 34);
+        }
+
+        .carousel-control-next,
+        .carousel-control-prev {
+            color: rgb(67, 164, 34);
+        }
+
+        .carousel-indicators li {
+            background-color: rgb(67, 164, 34);
+        }
+
+        .bg-default-lite {
+            background-color: #eeeeee;
+        }
+
+        .carousel .carousel-inner {
+            box-shadow: none;
+        }
+
+        .container-pro {
+            text-align: center;
+            padding: 80px;
+        }
+
+        .spacer-v1 {
+            margin: 100px 0;
+        }
+
+        #wall {
+            /* Prevent vertical gaps */
+            line-height: 10px;
+
+            -webkit-column-count: 5;
+            -webkit-column-gap: 10px;
+            -moz-column-count: 5;
+            -moz-column-gap: 10px;
+            column-count: 5;
+            column-gap: 10px;
+
+            max-height: 100%;
+            overflow: hidden;
+            position: absolute;
+        }
+
+        #wall img {
+            /* Just in case there are inline attributes */
+            width: 100% !important;
+            height: 100% !important;
+            margin-bottom: 5px;
+        }
+
+        @media (max-width: 1200px) {
+            #wall {
+                -moz-column-count: 4;
+                -webkit-column-count: 4;
+                column-count: 4;
+            }
+        }
+
+        @media (max-width: 1000px) {
+            #wall {
+                -moz-column-count: 3;
+                -webkit-column-count: 3;
+                column-count: 3;
+            }
+        }
+
+        @media (max-width: 800px) {
+            #wall {
+                -moz-column-count: 2;
+                -webkit-column-count: 2;
+                column-count: 2;
+            }
+        }
+
+        @media (max-width: 400px) {
+            #wall {
+                -moz-column-count: 1;
+                -webkit-column-count: 1;
+                column-count: 1;
+            }
+        }
+
+        @media (min-width: 992px) {
+            .image-wrap-right-1 {
+                right: 0;
+                left: calc(20% - 1500px / 2 - 30px / 2 + (1200px/ 12) * 5.2);
+            }
+
+            .image-wrap {
+                position: absolute;
+                top: 0;
+                height: 100%;
+            }
+
+            .image-wrap img {
+                max-width: none;
+                height: auto;
+            }
+        }
+
+        @media (max-width: 991px){
+            .div-off-992{
+                display: none;
+            }
+
+            .small-992{
+                width: 200px;
+            }
+        }
+
+        .image-wrap {
+            overflow: hidden;
+        }
+
+        .form .form-control {
+            background-color: #ffffff !important;
+        }
+
+        ._1242018 {
+            padding: unset !important;
+        }
+
+        .padding-v1 {
+            padding: 70px 0;
+        }
+
+        .container-v1 {
+            margin-left: 10%;
+            margin-right: 20px;
+        }
+
+        ::placeholder {
+            color: #ccc !important;
+        }
