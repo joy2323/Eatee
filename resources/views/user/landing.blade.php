@@ -1,7 +1,9 @@
-@extends('layouts.components.master')
+@extends('layouts.app')
 
 @section('title', 'mail.ng')
 @section('content')
+
+
 <div class="wrapper">
     <div class="page-header clear-filter page-header-medium" filter-color="white">
         <div class="page-header-image" data-parallax="true" style="background-image: url('/img/bitbucket-hero-image.png');">
@@ -256,5 +258,6 @@
         
     </div>
 </body>
+
 
 @endsection

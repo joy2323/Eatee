@@ -8,20 +8,16 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <title>@yield("title")</title>
     <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0, shrink-to-fit=no' name='viewport'/>
-    <!--     Owl Carousel       -->
-    <link rel="stylesheet" href="/libs/OwlCarousel/dist/assets/owl.carousel.min.css">
-    <link rel="stylesheet" href="/libs/OwlCarousel/dist/assets/owl.theme.default.min.css">
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
     <!-- CSS Files -->
     <link href="/css/bootstrap.min.css" rel="stylesheet" />
     <link href="/css/now-ui-kit.css?v=1.1.0" rel="stylesheet" />
-    <link href="/libs/iziModal/css/iziModal.min.css" rel="stylesheet" />
-    <link rel="stylesheet" href="/css/style.css" />
-    <link href="/css/snackbar.css" rel="stylesheet" />
+    <!-- CSS Just for demo purpose, don't include it in your project -->
+    <link href="/css/demo.css" rel="stylesheet" />
+    <link rel="stylesheet" href="/css/createAccount.css">
 
-    
     <!--   Core JS Files   -->
     <script src="/js/core/jquery.3.2.1.min.js" type="text/javascript"></script>
     <script src="/js/core/popper.min.js" type="text/javascript"></script>
@@ -35,16 +31,14 @@
     <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
     <script src="/js/now-ui-kit.js?v=1.1.0" type="text/javascript"></script>
     <script src="/js/core.js"></script>
-    <script src="/js/landing.js"></script>
+    <script src="/js/create.js"></script>
 </head>
-<body class="index-page sidebar-collapse">
+<body class="login-page sidebar-collapse" style="background-image: url('/img/bg-new.jpg'); background-size: cover; background-position: center center; min-height: 700px;">
     <div>
-        @include('layouts.partials.navbar')
+        @include('layouts.partials.profile-navbar')
         @yield('content')
-        @include('layouts.partials.footer')
+        {{-- @include('layouts.partials.footer') --}}
     </div>
 
-    {{-- @yield('javascript') --}}
+    
 </body>
-
-</html>

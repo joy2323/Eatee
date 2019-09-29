@@ -4,20 +4,19 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
-use Auth;
 
-class FoodController extends Controller
+class ProfileController extends Controller
 {
-    /**
-     * Display a listing of the resource.
-     *
-     * @return \Illuminate\Http\Response
-     */
     public function index()
     {
-        
+        return view('user.landing');
     }
 
+
+    public function profile()
+    {
+        return view('user.profile');
+    }
     /**
      * Show the form for creating a new resource.
      *
@@ -25,7 +24,7 @@ class FoodController extends Controller
      */
     public function create()
     {
-        //
+        return view('user.create-account');
     }
 
     /**

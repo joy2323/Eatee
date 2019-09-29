@@ -16,6 +16,9 @@
 // });
 
 Auth::routes();
-Route::get('/', 'FoodController@index');
+Route::get('/', 'ProfileController@index');
+Route::get('/create-account', 'ProfileController@create');
+Route::post('/create-account', 'ProfileController@');
+Route::get('profile', 'ProfileController@profile');
 
 Route::get('/home', 'HomeController@index')->name('home');
