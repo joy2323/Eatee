@@ -52,10 +52,7 @@ class PreferenceController extends Controller
             "fish_status"  => $fish_status,
             ]
         );
-        return response()->json([
-            "status"    =>  200,
-            "message"   =>  "success"
-        ]);
+        return redirect()->back();
 
     }
 
