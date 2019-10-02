@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Mail\PreferenceMail;
 use Illuminate\Http\Request;
 use App\User;
 use Auth;
@@ -45,9 +46,9 @@ class PreferenceController extends Controller
             $fish_status = 1;
         } else {
             $fish_status = 0;
-        }            
+        }
 
-        $save = Preference::create(
+        $preference = Preference::create(
             [
             "date"     =>   $date,
             "duration"  =>  $duration,
@@ -57,6 +58,11 @@ class PreferenceController extends Controller
             "fish_status"  => $fish_status,
             ]
         );
+
+        
+        Mail::to($invoice->customer->email)
+            ->queue(new PreferenceMail($preference));
+
         return redirect()->back();
     }
 
