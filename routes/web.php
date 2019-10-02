@@ -16,9 +16,9 @@
 // });
 
 Auth::routes();
-Route::get('/', 'ProfileController@index');
-Route::get('/create-account', 'ProfileController@create');
-Route::post('/create-account', 'ProfileController@');
-Route::get('profile', 'ProfileController@profile');
+Route::get('/', 'PreferenceController@index');
+Route::get('/create-account', 'PreferenceController@create');
+Route::get('profile', 'PreferenceController@profile');
+Route::post('/profile', 'PreferenceController@addPreference');
 
 Route::get('/home', 'HomeController@index')->name('home');

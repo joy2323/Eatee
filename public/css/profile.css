@@ -1,0 +1,135 @@
+@media (min-width: 1200px) {
+    .pricing-table {
+        margin-left: 99px;
+        margin-right: 69px;
+    }
+}
+
+@media (max-width: 479px) {
+    .pricing-table .pricing-title {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 479px) {
+    .pricing-table .price {
+        font-size: 16px;
+    }
+}
+
+.pricing-table hr {
+    margin-top: 6px;
+    margin-bottom: 0;
+}
+
+.pricing-table .pricing-element:before,
+.pricing-table .pricing-element:after {
+    display: table;
+    content: "";
+    line-height: 0;
+}
+
+.pricing-table .pricing-element:after {
+    clear: both;
+}
+
+.pricing-table .pricing-title {
+    float: left;
+    text-align: left;
+}
+
+.pricing-table .price {
+    float: right;
+    text-align: right;
+    color: #b82d39;
+    letter-spacing: 0.05em;
+}
+
+*+.pricing-element {
+    margin-top: 10px;
+}
+
+/******************************/
+
+.heading-6 {
+    display: block;
+    font-family: "Raleway", sans-serif;
+    color: #232323;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+}
+
+.heading-6 a:hover {
+    color: #b82d39;
+}
+
+.heading-6 {
+    font-family: "Open Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+
+    /*****/
+    color: black;
+}
+
+hr {
+    height: 1px;
+    width: 100%;
+    display: block;
+    border: none;
+    border-bottom: 1px solid;
+    padding: 0;
+}
+
+
+@media (min-width: 992px) {
+    .owl-prev,
+    .owl-next {
+        bottom: -108px;
+    }
+}
+
+.owl-prev,
+.owl-next {
+    position: absolute;
+    bottom: -60px;
+    font-size: 30px;
+    line-height: 30px;
+    font-family: 'fl-bigmug-line', sans-serif;
+    color: #481f23;
+    transition: .3s ease-out;
+}
+
+.owl-prev:hover,
+.owl-next:hover {
+    color: #b35a53;
+}
+
+
+.owl-carousel .col-md-6 {
+    max-width: unset;
+}
+
+.owl-prev::before {
+    font-family: 'FontAwesome';
+    content: '\f137';
+}
+
+.owl-prev {
+    right: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+.owl-next {
+    left: 50%;
+    -webkit-transform: translateX(50%);
+    transform: translateX(50%);
+}
+
+.owl-next::before {
+    font-family: 'FontAwesome';
+    content: '\f138';
+}

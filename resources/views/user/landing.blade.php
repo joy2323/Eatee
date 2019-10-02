@@ -179,7 +179,7 @@
                 <div class="row">
                     <div class="col-lg-5 col-12">
 
-                        <form class="form padding-v1" id="form-table">
+                        {{-- <form class="form padding-v1" id="form-table">
                             <h3 class="text-center display-5 text-nature">CREATE A FOOD TABLE</h3>
                             <div class="form-group">
                                 <p>Start date: </p>
@@ -216,7 +216,7 @@
                                 Find a table
                             </button>
 
-                        </form>
+                        </form> --}}
                     </div>
                     <div class="col-lg-1"></div>
                     <div class="col-lg-6 col-12">

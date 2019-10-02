@@ -4,14 +4,17 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use App\User;
+use Auth;
+use Carbon\Carbon;
+use App\Preference;
 
-class ProfileController extends Controller
+class PreferenceController extends Controller
 {
+    
     public function index()
     {
         return view('user.landing');
     }
-
 
     public function profile()
     {
@@ -22,9 +25,38 @@ class ProfileController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function addPreference(Request $request)
     {
-        return view('user.create-account');
+        // dd($request->all());
+        $date = $request->date;
+        $duration = $request->duration;
+        $budget = $request->budget;
+        $allergy = $request->allergies;
+        $meat_status = false;
+        $fish_status = false;
+
+            if ($request->meat_status == 'yes') {
+                $request->meat_status = 1;
+            } else {
+            $request->meat_status = 0;
+            }
+            
+
+        $save = Preference::create(
+            [
+            "date"     =>   $date,
+            "duration"  =>  $duration,
+            "budget"    =>  $budget,
+            "allergies"  => $allergy,
+            "meat_status" => $meat_status,
+            "fish_status"  => $fish_status,
+            ]
+        );
+        return response()->json([
+            "status"    =>  200,
+            "message"   =>  "success"
+        ]);
+
     }
 
     /**

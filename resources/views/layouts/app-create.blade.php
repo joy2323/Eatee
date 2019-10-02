@@ -29,9 +29,9 @@
     <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
     <script src="/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
     <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
-    <script src="/js/now-ui-kit.js?v=1.1.0" type="text/javascript"></script>
+    {{-- <script src="/js/now-ui-kit.js?v=1.1.0" type="text/javascript"></script>
     <script src="/js/core.js"></script>
-    <script src="/js/create.js"></script>
+    <script src="/js/create.js"></script> --}}
 </head>
 <body class="login-page sidebar-collapse" style="background-image: url('/img/bg-new.jpg'); background-size: cover; background-position: center center; min-height: 700px;">
     <div>

@@ -14,11 +14,13 @@
     <!--     Fonts and icons     -->
     <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700,200" rel="stylesheet" />
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
     <!-- CSS Files -->
     <link href="/css/bootstrap.min.css" rel="stylesheet" />
     <link href="/css/now-ui-kit.css?v=1.1.0" rel="stylesheet" />
     <link href="/libs/iziModal/css/iziModal.min.css" rel="stylesheet" />
     <link rel="stylesheet" href="/css/style.css" />
+    <link rel="stylesheet" href="/css/demo.css">
     <link href="/css/snackbar.css" rel="stylesheet" />
 
     
@@ -32,9 +34,8 @@
     <script src="/js/plugins/nouislider.min.js" type="text/javascript"></script>
     <!--  Plugin for the DatePicker, full documentation here: https://github.com/uxsolutions/bootstrap-datepicker -->
     <script src="/js/plugins/bootstrap-datepicker.js" type="text/javascript"></script>
-    <!-- Control Center for Now Ui Kit: parallax effects, scripts for the example pages etc -->
-    <script src="/js/now-ui-kit.js?v=1.1.0" type="text/javascript"></script>
-    <script src="/js/core.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
     <script src="/js/landing.js"></script>
 </head>
 <body class="index-page sidebar-collapse">

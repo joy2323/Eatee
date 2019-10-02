@@ -6,7 +6,7 @@
     <div class="container">
         <div class="col-md-4 content-center">
             <div class="card card-login card-plain">
-                <form class="form" method="" id="signin-form">
+                <form class="form" method="Post" id="signin-form" action="{{ route('register') }}">
                     @csrf
 
                     <div class="header header-primary text-center">
@@ -22,7 +22,7 @@
                                 <i class="now-ui-icons users_circle-08 text-dark"></i>
                             </span>
                             <input type="text" name="name" class="form-control" placeholder="Name e.g John Doe" required autocomplete="off">
-                        </div>
+                    </div>
                         <div class="input-group form-group-no-border input-lg">
                             <span class="input-group-addon">
                                 <i class="now-ui-icons users_circle-08 text-dark"></i>

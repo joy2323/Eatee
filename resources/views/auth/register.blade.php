@@ -1,77 +1,81 @@
-@extends('layouts.app')
+@extends('layouts.app-create')
+@section('title', 'Create Account - Eat Rit')
 
 @section('content')
-<div class="container">
-    <div class="row justify-content-center">
-        <div class="col-md-8">
-            <div class="card">
-                <div class="card-header">{{ __('Register') }}</div>
 
-                <div class="card-body">
-                    <form method="POST" action="{{ route('register') }}">
-                        @csrf
+<div class="page-header">
+        <div class="container">
+            <div class="col-md-4 content-center">
+                <div class="card card-login card-plain">
+                            <form method="POST" action="{{ route('register') }}">
+                                @csrf
 
-                        <div class="form-group row">
-                            <label for="name" class="col-md-4 col-form-label text-md-right">{{ __('Name') }}</label>
+                                <div class="header header-primary text-center">
+                                    <div class="logo-container" style="height: 100px; width: 100px;">
+                                        <img src="/img/Vertcoin.svg.png" alt="">
+                                    </div>
+                                </div>
 
-                            <div class="col-md-6">
-                                <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" value="{{ old('name') }}" required autocomplete="name" autofocus>
-
-                                @error('name')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
+                                <div class="content">
+                                <div class="input-group form-group-no-border input-lg">
+                                        <span class="input-group-addon">
+                                            <i class="now-ui-icons users_circle-08 text-dark"></i>
+                                        </span>
+                                        <input id="name" type="text" class="form-control @error('name') is-invalid @enderror" name="name" placeholder="Name e.g John Doe" value="{{ old('name') }}" required autocomplete="name">
+                                        @error('name')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror
+                                </div>
+                                <div class="input-group form-group-no-border input-lg">
+                                    <span class="input-group-addon">
+                                            <i class="now-ui-icons users_circle-08 text-dark"></i>
                                     </span>
-                                @enderror
+                                    <input type="email" class="form-control @error('email') is-invalid @enderror" placeholder="Email" name="email" value="{{ old('email') }}" required autocomplete="email">
+
+                                    @error('email')
+                                        <span class="invalid-feedback" role="alert">
+                                            <strong>{{ $message }}</strong>
+                                        </span>
+                                    @enderror
+                                </div>
+
+                                <div class="input-group form-group-no-border input-lg" style="margin-bottom: 10px !important;">
+                                        <span class="input-group-addon">
+                                            <i class="now-ui-icons users_circle-08 text-dark"></i>
+                                        </span>
+                                        <input type="text" class="form-control" name="phone" placeholder="Phone Number" required autocomplete="off">
+                                    </div>
+                                </div>
+
+                                <div class="input-group form-group-no-border input-lg">
+                                        <span class="input-group-addon">
+                                            <i class="now-ui-icons ui-1_lock-circle-open text-dark"></i>
+                                        </span>
+                                        <input type="password" class="form-control @error('password') is-invalid @enderror" name="password" name="password" placeholder="Password" required autocomplete="new-password">
+                                        {{-- @error('password')
+                                            <span class="invalid-feedback" role="alert">
+                                                <strong>{{ $message }}</strong>
+                                            </span>
+                                        @enderror --}}
+                                </div>
+                            
                             </div>
+                            <div class="footer" style="margin-top:-4rem !important; margin-right:8rem !important;">
+
+                                <div class="pull-right" >
+                                    <button type="submit" class="btn btn-nature w-150">
+                                        {{ __('Register') }}
+                                    </button>
+                                </div>
+                            {{-- </div> --}}
+                                
+                            </form>
                         </div>
-
-                        <div class="form-group row">
-                            <label for="email" class="col-md-4 col-form-label text-md-right">{{ __('E-Mail Address') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="email" type="email" class="form-control @error('email') is-invalid @enderror" name="email" value="{{ old('email') }}" required autocomplete="email">
-
-                                @error('email')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password" class="col-md-4 col-form-label text-md-right">{{ __('Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password" type="password" class="form-control @error('password') is-invalid @enderror" name="password" required autocomplete="new-password">
-
-                                @error('password')
-                                    <span class="invalid-feedback" role="alert">
-                                        <strong>{{ $message }}</strong>
-                                    </span>
-                                @enderror
-                            </div>
-                        </div>
-
-                        <div class="form-group row">
-                            <label for="password-confirm" class="col-md-4 col-form-label text-md-right">{{ __('Confirm Password') }}</label>
-
-                            <div class="col-md-6">
-                                <input id="password-confirm" type="password" class="form-control" name="password_confirmation" required autocomplete="new-password">
-                            </div>
-                        </div>
-
-                        <div class="form-group row mb-0">
-                            <div class="col-md-6 offset-md-4">
-                                <button type="submit" class="btn btn-primary">
-                                    {{ __('Register') }}
-                                </button>
-                            </div>
-                        </div>
-                    </form>
-                </div>
             </div>
         </div>
     </div>
+</div>
 </div>
 @endsection
