@@ -21,11 +21,12 @@ class CreatePreferencesTable extends Migration
             $table->string('allergies')->nullable();
             $table->boolean('meat_status')->default();
             $table->boolean('fish_status')->default();
-            $table->timestamps();
-            $table->foreign('users_id')
+            $table->unsignedBigInteger('user_id');
+            $table->foreign('user_id')
                         ->references('id')->on('users')
                         ->onUpdate('cascade')
 						->onDelete('cascade');
+            $table->timestamps();
         });
     }
 

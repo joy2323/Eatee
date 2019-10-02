@@ -35,12 +35,17 @@ class PreferenceController extends Controller
         $meat_status = false;
         $fish_status = false;
 
-            if ($request->meat_status == 'yes') {
-                $request->meat_status = 1;
-            } else {
-            $request->meat_status = 0;
-            }
-            
+        if ($request->meat_status == 'yes') {
+            $meat_status = 1;
+        } else {
+            $meat_status = 0;
+        }
+
+        if ($request->fish_status == 'yes') {
+            $fish_status = 1;
+        } else {
+            $fish_status = 0;
+        }            
 
         $save = Preference::create(
             [
@@ -53,7 +58,6 @@ class PreferenceController extends Controller
             ]
         );
         return redirect()->back();
-
     }
 
     /**
