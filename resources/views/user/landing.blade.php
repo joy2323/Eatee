@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'mail.ng')
+@section('title', 'meals.ng')
 @section('content')
 
 
@@ -163,7 +163,7 @@
                             <form class="form" id="subscribe">
                                 <h4 class="text-center display-5">Hi, We've got great gists for you!. Subscribe to our newsletter</h4>
                                 <div class="form-group">
-                                    <input class="form-control w-75 mx-auto" type="text" name="subscribe_email" placeholder="Email" required/>
+                                    <input class="form-control w-75 mx-auto" type="text" name="subscribe_email" style="height: 45px;" placeholder="Email" required/>
                                 </div>
                                 <div class="text-center">
                                     <button class="btn btn-nature" id="subscribe-btn">Subscribe</button>

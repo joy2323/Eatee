@@ -3,7 +3,8 @@
     <div class="container">
         <div class="navbar-translate">
             <a class="navbar-brand" href="/">
-                Welcome  <a href="#"><i class="fa fa-circle text-success"></i> <b> </b></a>
+                Welcome  
+                {{-- <a href="#"><i class="fa fa-circle text-success"></i> <b> </b></a> --}}
             </a>
             <button class="navbar-toggler navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navigation-index"
                 aria-expanded="false" aria-label="Toggle navigation">

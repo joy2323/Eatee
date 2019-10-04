@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', '')
+@section('title', 'Meals.ng')
 @section('content')
 
 <div class="section bg-default-lite _1242018">
@@ -30,7 +30,7 @@
                             {{-- </ul> --}}
                         {{-- </div>  --}}
 
-                        <select class="browser-default custom-select" name="duration">
+                        <select class="browser-default custom-select" name="duration" style="border-radius: 5rem;">
                             <option selected>Open this select menu</option>
                             <option value="1 Week">1 Week</option>
                             <option value="2 Weeks">2 Weeks</option>
@@ -41,11 +41,11 @@
                     <div class="form-group">
                             <p>Do you like Meat?
                             <div class="custom-control custom-radio custom-control-inline">
-                                <input value="1" type="radio"  id="customRadioInline1"  name="meat_status" class="custom-control-input">
+                                <input value="true" type="radio"  id="customRadioInline1"  name="meat_status" class="custom-control-input">
                                 <label class="custom-control-label" for="customRadioInline1"> Yes</label>
                             </div>
                             <div class="custom-control custom-radio custom-control-inline">
-                                <input value="0" type="radio"  id="customRadioInline2" name="meat_status" class="custom-control-input">
+                                <input value="false" type="radio"  id="customRadioInline2" name="meat_status" class="custom-control-input">
                                 <label class="custom-control-label" for="customRadioInline2">No </label>
                             </div>
                             </p>
