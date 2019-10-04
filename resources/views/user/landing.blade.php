@@ -14,7 +14,7 @@
                 <div class="col-lg-6 col-12">
                     <div class="brand">
                         <img class="n-logo" src="/img/Vertcoin.svg.png" alt="">
-                        <h1 class="h1-seo text-nature">Eat Rit.</h1>
+                        <h1 class="h1-seo text-nature">Meals.Ng</h1>
                         <h3 class="text-nature">Eat healthy, Stay Healthy.</h3>
                     </div>
                     <div class="mx-auto">

@@ -13,6 +13,7 @@
                                 <div class="header header-primary text-center">
                                     <div class="logo-container" style="height: 100px; width: 100px;">
                                         <img src="/img/Vertcoin.svg.png" alt="">
+                                        {{-- <h1 class="h1-seo text-nature">Meals.Ng</h1> --}}
                                     </div>
                                 </div>
 
@@ -62,7 +63,7 @@
                                 </div>
                             
                             </div>
-                            <div class="footer" style="margin-top:-4rem !important; margin-right:8rem !important;">
+                            <div class="footer" style="margin-top:-4rem !important; margin-right:22rem !important;">
 
                                 <div class="pull-right" >
                                     <button type="submit" class="btn btn-nature w-150">
