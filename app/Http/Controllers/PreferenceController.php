@@ -8,9 +8,14 @@ use App\User;
 use Auth;
 use Carbon\Carbon;
 use App\Preference;
+use Illuminate\Support\Facades\Mail;
 
 class PreferenceController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('auth');
+    }
     
     public function index()
     {
@@ -28,39 +33,32 @@ class PreferenceController extends Controller
      */
     public function addPreference(Request $request)
     {
-        // dd($request->all());
+        $request->validate([
+            'date' => 'required|date|after_or_equal:today',
+            'duration' => 'required|string',
+            'budget'   => 'required|numeric',
+            'allergies' => 'required|string',
+            'meat_status' => 'required|integer|min:0|max:1',
+            'fish_status' => 'required|integer|min:0|max:1',
+        ]);
+        $user = Auth::user();
+        //dd($request->all());
         $date = $request->date;
         $duration = $request->duration;
         $budget = $request->budget;
         $allergy = $request->allergies;
-        $meat_status = false;
-        $fish_status = false;
 
-        if ($request->meat_status == 'yes') {
-            $meat_status = 1;
-        } else {
-            $meat_status = 0;
-        }
-
-        if ($request->fish_status == 'yes') {
-            $fish_status = 1;
-        } else {
-            $fish_status = 0;
-        }
-
-        $preference = Preference::create(
-            [
-            "date"     =>   $date,
-            "duration"  =>  $duration,
-            "budget"    =>  $budget,
-            "allergies"  => $allergy,
-            "meat_status" => $meat_status,
-            "fish_status"  => $fish_status,
-            ]
-        );
-
+        $preference = Preference::create([
+            "date"         => $date,
+            "duration"     => $duration,
+            "budget"       => $budget,
+            "allergies"    => $allergy,
+            "meat_status"  => $request->meat_status,
+            "fish_status"  => $request->fish_status,
+            'user_id'      => $user->id
+            ]);
         
-        Mail::to($invoice->customer->email)
+        Mail::to($user->email)
             ->queue(new PreferenceMail($preference));
 
         return redirect()->back();
