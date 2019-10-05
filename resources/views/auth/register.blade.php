@@ -63,14 +63,15 @@
                                 </div>
                             
                             </div>
-                            <div class="footer" style="margin-top:-4rem !important; margin-right:22rem !important;">
+                            <div class="footer">
 
                                 <div class="pull-right" >
-                                    <button type="submit" class="btn btn-nature w-150">
+                                    <button type="submit" class="btn btn-nature w-150" id="register-button">
                                         {{ __('Register') }}
                                     </button>
                                 </div>
                             {{-- </div> --}}
+                            
                                 
                             </form>
                         </div>

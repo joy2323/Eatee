@@ -202,3 +202,9 @@
         ::placeholder {
             color: #ccc !important;
         }
+        #form-table {
+            position: relative;
+            margin-left: 9rem;
+            width:500px;
+            z-index: 1;
+        }

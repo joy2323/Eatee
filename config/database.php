@@ -45,9 +45,9 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => env('DATABASE_URL'),
+            'url' => 'DATABASE_URL',
             'host' => 'db4free.net',
-            'port' => env('DB_PORT', '3306'),
+            'port' => '3306',
             'database' => 'mealsng',
             'username' => 'mealsng',
             'password' =>  'mealsng2019',

@@ -7,7 +7,7 @@
         <div class="row">
             <div class="col-lg-5 col-12">
 
-                <form class="form padding-v1" id="form-table" method="POST" style="margin-left: 15rem; width: 500px;">
+                <form class="form padding-v1" id="form-table" method="POST">
                     @csrf
                     <h3 class="text-center display-5 text-nature">CREATE A FOOD TABLE</h3>
                     <div class="form-group">

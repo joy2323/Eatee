@@ -312,3 +312,7 @@ background-color: transparent !important;
 .full-width {
     width: 100%;
 }
+#register-button {
+    margin-top:-4rem !important;
+    margin-right:22rem !important;
+}
