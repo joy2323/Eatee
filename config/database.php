@@ -45,7 +45,7 @@ return [
 
         'mysql' => [
             'driver' => 'mysql',
-            'url' => 'DATABASE_URL',
+            // 'url' => 'DATABASE_URL',
             'host' => 'db4free.net',
             'port' => '3306',
             'database' => 'mealsng',
