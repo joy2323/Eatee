@@ -58,8 +58,9 @@ class PreferenceController extends Controller
             'user_id'      => $user->id
             ]);
         
-        Mail::to($user->email)
-            ->queue(new PreferenceMail($preference));
+        Mail::to($request->user()->email)
+            // ->queue(new PreferenceMail($preference));
+            ->send(new PreferenceMail($preference));
 
         return redirect()->back();
     }
