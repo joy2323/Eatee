@@ -1,5 +1,5 @@
 @extends('layouts.app-create')
-@section('title', 'Login- mail.ng')
+@section('title', 'Login- meals.ng')
 @section('content')
 
                 <div class="page-header">

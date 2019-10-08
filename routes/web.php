@@ -17,7 +17,7 @@
 
 Auth::routes();
 Route::get('/', 'PreferenceController@index');
-Route::get('/create-account', 'PreferenceController@create');
+// Route::get('/create-account', 'PreferenceController@profile');
 Route::get('profile', 'PreferenceController@profile');
 Route::post('/profile', 'PreferenceController@addPreference');
 

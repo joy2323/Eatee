@@ -22,12 +22,12 @@
                     <div class="">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link text-nature" href="#">Member ?</a>
+                                <a class="nav-link text-nature" href="#"> Not a Member ?</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link btn btn-nature-inverse" href="login" >
+                                <a class="nav-link btn btn-nature-inverse" href="register" >
                                     <i class="now-ui-icons arrows-1_share-66"></i>
-                                    <p>Login</p>
+                                    <p>Register</p>
                                 </a>
                             </li>
                         </ul>
