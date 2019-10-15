@@ -22,7 +22,7 @@
                     <div class="">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link text-nature" href="#"> Not a Member ?</a>
+                                <a class="nav-link text-nature" href="register#"> Not a Member ?</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link btn btn-nature-inverse" href="register" >
