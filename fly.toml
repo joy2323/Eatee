@@ -1,6 +1,6 @@
 # fly.toml file generated for mealsng on 2023-03-06T17:00:35+01:00
 
-app = "mealsng"
+app = "eatee"
 kill_signal = "SIGINT"
 kill_timeout = 5
 processes = []
@@ -15,6 +15,7 @@ processes = []
   LOG_CHANNEL = "stderr"
   LOG_LEVEL = "info"
   LOG_STDERR_FORMATTER = "Monolog\\Formatter\\JsonFormatter"
+  APP_URL = "https://fly-hello-laravel.fly.dev"
 
 [experimental]
   auto_rollback = true
