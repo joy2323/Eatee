@@ -1,6 +1,6 @@
 @extends('layouts.app')
 
-@section('title', 'meals.ng')
+@section('title', 'Maelumdeli.com')
 @section('content')
 
 

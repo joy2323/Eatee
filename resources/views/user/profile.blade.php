@@ -1,5 +1,5 @@
 @extends('layouts.app')
-@section('title', 'Meals.ng')
+@section('title', 'Maelumdeli.com')
 @section('content')
 
 <div class="section bg-default-lite _1242018">
