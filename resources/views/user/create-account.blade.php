@@ -1,5 +1,5 @@
 @extends('layouts.app-create')
-@section('title', 'Create Account - Maelumdeli.com')
+@section('title', 'Create Account - Eatee.com')
 @section('content')
 
 <div class="page-header">
