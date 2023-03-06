@@ -1,4 +1,4 @@
-# fly.toml file generated for mealsng on 2023-03-06T17:00:35+01:00
+# fly.toml file generated for eatee on 2023-03-06T20:44:02+01:00
 
 app = "eatee"
 kill_signal = "SIGINT"
@@ -15,7 +15,6 @@ processes = []
   LOG_CHANNEL = "stderr"
   LOG_LEVEL = "info"
   LOG_STDERR_FORMATTER = "Monolog\\Formatter\\JsonFormatter"
-  APP_URL = "https://fly-hello-laravel.fly.dev"
 
 [experimental]
   auto_rollback = true
