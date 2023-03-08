@@ -10,7 +10,6 @@ use Fideloper\Proxy\TrustProxies as Middleware;
 
 class TrustProxies extends Middleware
 {
-    use Closure;
 
      /**
      * The configuration repository instance.
@@ -27,6 +26,10 @@ class TrustProxies extends Middleware
      */
     public function __construct(Repository $config)
     {
+        parent::__construct($config->get('trustedproxy.proxies'));
+
+        $this->headers = $config->get('trustedproxy.headers');
+
         $this->config = $config;
     }
 
@@ -37,11 +40,10 @@ class TrustProxies extends Middleware
      * @param  \Closure  $next
      * @return mixed
      */
-    public function handle($request, Closure $next)
+    public function handle($request, \Closure $next)
     {
-        $this->app->set('request', $request);
-    
-        return $next($request);
+        return parent::handle($request, $next);
+
     }
     
 
