@@ -2,8 +2,9 @@
 
 namespace App\Http\Middleware;
 
-use Illuminate\Http\Middleware\TrustProxies as Middleware;
 use Illuminate\Http\Request;
+use Illuminate\Contracts\Config\Repository;
+use Illuminate\Http\Middleware\TrustProxies as Middleware;
 
 class TrustProxies extends Middleware
 {
@@ -14,6 +15,10 @@ class TrustProxies extends Middleware
      */
     protected $proxies;
 
+    public function __construct(Repository $config)
+    {
+        $this->config = $config;
+    }
     /**
      * The headers that should be used to detect proxies.
      *
