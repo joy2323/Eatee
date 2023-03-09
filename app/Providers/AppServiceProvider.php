@@ -5,6 +5,7 @@ namespace App\Providers;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Schema;
 use Illuminate\Support\ServiceProvider;
+use Illuminate\Contracts\Config\Repository;
 
 class AppServiceProvider extends ServiceProvider
 {
@@ -13,10 +14,18 @@ class AppServiceProvider extends ServiceProvider
      *
      * @return void
      */
+    // public function register()
+    // {
+    //     //
+    // }
+
     public function register()
     {
-        //
+        $this->app->singleton(Repository::class, function () {
+            return $this->app['config'];
+        });
     }
+
 
     /**
      * Bootstrap any application services.
