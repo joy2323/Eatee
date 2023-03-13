@@ -1,5 +1,5 @@
 @extends('layouts.app-create')
-@section('title', 'Create Account - MealsNg')
+@section('title', 'Create Account - Eatee')
 
 @section('content')
 
